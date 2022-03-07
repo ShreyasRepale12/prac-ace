@@ -48,6 +48,7 @@
             sm:py-2
             text-lg
             bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
+            font-semibold
           "
           style="background-color: #4ce6a7;"
         >
@@ -70,6 +71,7 @@
             py-1
             sm:py-2
             text-lg
+            font-semibold
           "
         >
           Learn More
@@ -77,7 +79,7 @@
       </div>
       <img
         src="~/static/ruby.png"
-        alt="Smiley face"
+        alt="Ruby"
         style="
           position: absolute;
           width: 100px;
@@ -89,7 +91,7 @@
       />
       <img
         src="~/static/ruby2.png"
-        alt="Smiley face"
+        alt="Ruby 1"
         style="
           position: absolute;
           width: 200px;
@@ -100,7 +102,7 @@
         id="content-desktop"
       />
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
