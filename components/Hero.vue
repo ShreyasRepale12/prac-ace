@@ -4,9 +4,9 @@
       <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
         <h1
           class="
-            text-2xl
-            sm:text-3xl
-            md:text-4xl
+            text-4xl
+            sm:text-5xl
+            md:text-5xl
             lg:text-6xl
             xl:text-7xl
             text-center text-white
