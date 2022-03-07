@@ -19,7 +19,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { hid: 'fontawesome', src: 'https://kit.fontawesome.com/227c84a4e1.js', defer: true }
+      { hid: 'fontawesome', src: 'https://kit.fontawesome.com/227c84a4e1.js', defer: true },
     ]
   },
 

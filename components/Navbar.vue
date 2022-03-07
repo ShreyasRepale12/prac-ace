@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nav class="w-full lg:px-40 px-5 py-3 bg-transparent top-0 fixed z-10" style="background: rgba(0,30,38,0.8); backdrop-filter: blur(15px);">
+  <nav class="w-full lg:px-40 px-5 py-3 bg-transparent top-0 fixed z-10" style="background: rgba(0,32,33,1.0); ">
     <div class="flex items-center justify-between ">
 
       <!-- Header logo -->
@@ -46,6 +46,7 @@
             text-sm
             bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
             animate__animated animate__pulse animate__infinite
+            font-medium
           "
           style="background-color: #4ce6a7;"
         >
