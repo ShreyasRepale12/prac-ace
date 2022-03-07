@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nav class="w-full lg:px-40 px-5 py-3 bg-transparent top-0 fixed " style="background-color: #09262d;">
+  <nav class="w-full lg:px-40 px-5 py-3 bg-transparent top-0 fixed z-10" style="background: rgba(0,30,38,0.8); backdrop-filter: blur(15px);">
     <div class="flex items-center justify-between ">
 
       <!-- Header logo -->
@@ -29,6 +29,28 @@
           <li><a href="#" class="text-white hover:text-gray-300 hover:bg-gray-700 hover:text-green-300 block px-2 py-2 rounded-md text-base font-medium">Events</a></li>
           <li><a href="#" class="text-white hover:text-gray-300 hover:bg-gray-700 hover:text-green-300 block px-2 py-2 rounded-md text-base font-medium">Resources</a></li>
           <li><a href="#" class="text-white hover:text-gray-300 hover:bg-gray-700 hover:text-green-300 block px-2 py-2 rounded-md text-base font-medium">Contact</a></li>
+          <li><button
+          class="
+            focus:outline-none
+            transition
+            duration-150
+            ease-in-out
+            text-white
+            hover:bg-green-600
+            rounded-full
+            text-white
+            px-5
+            sm:px-8
+            py-1
+            sm:py-2
+            text-sm
+            bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
+            animate__animated animate__pulse animate__infinite
+          "
+          style="background-color: #4ce6a7;"
+        >
+          Join Club
+        </button></li>
         </ul>
       </div>
 
@@ -71,7 +93,7 @@
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Features</a></li>
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">FAQ</a></li>
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Contact</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white">Sign Up</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-8 w-full text-center font-semibold cta inline-block bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 px-3 py-2 rounded text-white">Join Club</a></li>
         </ul>
 
         <div class="follow">

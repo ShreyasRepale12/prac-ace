@@ -35,21 +35,23 @@
         <button
           class="
             focus:outline-none
-            bg-indigo-700
             transition
             duration-150
             ease-in-out
-            hover:bg-indigo-600
-            rounded
             text-white
-            px-4
-            sm:px-10
-            py-2
-            sm:py-4
-            text-sm
+            hover:bg-green-600
+            rounded-full
+            text-white
+            px-8
+            sm:px-12
+            py-1
+            sm:py-2
+            text-lg
+            bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
           "
+          style="background-color: #4ce6a7;"
         >
-          Get Started
+          Join Club
         </button>
         <button
           class="
@@ -60,17 +62,17 @@
             duration-150
             ease-in-out
             hover:border-indigo-600 hover:text-indigo-600
-            rounded
+            rounded-full
             border border-indigo-700
             text-indigo-700
             px-4
             sm:px-10
-            py-2
-            sm:py-4
-            text-sm
+            py-1
+            sm:py-2
+            text-lg
           "
         >
-          Live Demo
+          Learn More
         </button>
       </div>
       <img
@@ -98,6 +100,7 @@
         id="content-desktop"
       />
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
