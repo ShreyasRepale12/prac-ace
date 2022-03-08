@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: #001e26" class="pt-10">
-    <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+  <div style="background-color: #001e26" class="pt-20">
+    <div class="container mx-auto flex flex-col items-center py-14 sm:py-24">
       <div class="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
         <h1
           class="
@@ -81,41 +81,64 @@
         </button>
       </div>
       <img
-        src="~/static/ruby.png"
-        alt="Ruby"
+        src="~/static/hero-logos/vue-logo.png"
+        alt="VueJs"
         style="
           position: absolute;
-          width: 100px;
-          height: 100px;
-          top: 80px;
+          width: 80px;
+          height: 80px;
+          top: 90px;
           right: 190px;
+          transform: rotate(20deg);
         "
         id="content-desktop"
       />
       <img
-        src="~/static/ruby2.png"
-        alt="Ruby 1"
+        src="~/static/hero-logos/kotlin-logo.png"
+        alt="Kotlin"
         style="
           position: absolute;
-          width: 200px;
-          height: 200px;
+          width: 90px;
+          height: 90px;
           top: 130px;
-          right: 1200px;
+          left: 120px;
+          transform: rotate(20deg);
+        "
+        id="content-desktop"
+      />
+
+      <img
+        src="~/static/hero-logos/react-logo.png"
+        alt="ReactJS"
+        style="
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          top: 430px;
+          left: 180px;
         "
         id="content-desktop"
       />
     </div>
-    
-      <img src="~/static/ruby2.png" class="rubydesktop" style="
-          position: absolute;
-          top: 450px;
-          left: 10px;
-        " id="content-desktop">
 
-      <img src="~/static/ruby2.png" class="rubymobile" height="75px" width="75px" style="position: absolute;
-          top: 400px;
-          left: 10px;" id="content-mobile">
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <img
+      src="~/static/hero-logos/angular-logo.png"
+      alt="Angular"
+      style="
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 490px;
+        right: 240px;
+        transform: rotate(-10deg);
+      "
+      id="content-desktop"
+    />
+    <div
+      style="height: 160px"
+      class="invisible md:visible" id="content-desktop"
+    ></div>
+    <img src="~/static/cheer.gif" id="content-mobile" style="width: 100px; height: 100px;" class="container mx-auto flex flex-col items-center pb-3">
   </div>
 </template>
 
@@ -137,15 +160,15 @@ export default {
     },
     animateOnScroll() {
       this.$gsap.to(".rubydesktop", {
-      rotation: 480,
-      x: 850,
-      duration: 5
-    });
-    this.$gsap.to(".rubymobile", {
-      rotation: 480,
-      x: 150,
-      duration: 5
-    });
+        rotation: 480,
+        x: 850,
+        duration: 5,
+      });
+      this.$gsap.to(".rubymobile", {
+        rotation: 480,
+        x: 150,
+        duration: 5,
+      });
     },
   },
 };
