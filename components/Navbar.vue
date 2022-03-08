@@ -90,9 +90,9 @@
 
         <ul class="divide-y font-sans text-white hover:text-gray-400">
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Home</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Services</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Features</a></li>
-          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">FAQ</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">About</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Events</a></li>
+          <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Resources</a></li>
           <li><a href="#" @click="isOpen = false" class="my-4 inline-block">Contact</a></li>
           <li><a href="#" @click="isOpen = false" class="my-8 w-full text-center font-semibold cta inline-block bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 px-3 py-2 rounded text-white">Join Club</a></li>
         </ul>

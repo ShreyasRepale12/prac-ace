@@ -3,6 +3,7 @@
   <Navbar />
   <Hero />
   <About />
+  <Events />
   </div>
 </template>
 

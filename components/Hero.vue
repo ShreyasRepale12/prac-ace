@@ -146,7 +146,6 @@
 export default {
   name: "Hero",
   mounted() {
-    this.animateOnScroll();
   },
   methods: {
     // Function to toggle header menu in mobile view.
@@ -157,18 +156,6 @@ export default {
       } else {
         value.classList.add("hidden");
       }
-    },
-    animateOnScroll() {
-      this.$gsap.to(".rubydesktop", {
-        rotation: 480,
-        x: 850,
-        duration: 5,
-      });
-      this.$gsap.to(".rubymobile", {
-        rotation: 480,
-        x: 150,
-        duration: 5,
-      });
     },
   },
 };
