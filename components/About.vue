@@ -5,7 +5,7 @@
   >
     <h1
       class="
-        box
+        aboutheading
         font-medium
         leading-tight
         sm:text-5xl
@@ -85,8 +85,8 @@
         </button>
       </p>
       <img
-        src="https://mdbootstrap.com/img/new/standard/city/047.jpg"
-        class="ax-w-full rounded-lg border-4 hover:border-slate-50" style="height: 250px;" id="content-desktop"
+        src="https://flowbite.com/docs/images/blog/image-1.jpg"
+        class="ax-w-full rounded-lg border-4 hover:border-green-300" style="height: 250px;" id="content-desktop"
       />
     </div>
   </div>
@@ -100,8 +100,8 @@ export default {
 
   methods: {
     animateOnScroll() {
-      this.$gsap.to(".box", {
-        x: -200,
+      this.$gsap.to(".aboutheading", {
+        x: -300,
         ease: "Power2.easeInOut",
         scrollTrigger: {
           trigger: "bottom",
