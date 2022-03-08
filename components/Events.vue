@@ -28,16 +28,15 @@
         class="
           flex flex-col
           items-center
-          bg-white
           rounded-lg
           border
           shadow-md
           md:flex-row md:max-w-xl
-          hover:bg-gray-100
-          dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+          hover:bg-dark
           lg:col-span-1
           col-span-2
         "
+        style="background-color: #001e26;"
       >
         <img
           class="
@@ -57,13 +56,12 @@
               text-2xl
               font-bold
               tracking-tight
-              text-gray-900
-              dark:text-white
+              text-white
             "
           >
             Master Git and Github from Scratch
           </h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p class="mb-3 font-normal text-gray-300">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
           </p>
@@ -74,13 +72,12 @@
         class="
           flex flex-col
           items-center
-          bg-white
+          bg-gray-900
           rounded-lg
           border
           shadow-md
           md:flex-row md:max-w-xl
-          hover:bg-gray-100
-          dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+          hover:bg-dark
           lg:col-span-1
           col-span-2
         "
@@ -103,13 +100,12 @@
               text-2xl
               font-bold
               tracking-tight
-              text-gray-900
-              dark:text-white
+              text-white
             "
           >
             Learn Core Java From Scratch
           </h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p class="mb-3 font-normal text-gray-300">
             Here are the biggest enterprise technology acquisitions of 2021 so
             far, in reverse chronological order.
           </p>
@@ -121,23 +117,18 @@
 
 <script>
 export default {
-  data() {
-    return {
-      
-    };
-  },
   mounted() {
     this.animateOnScroll();
   },
   methods: {
     animateOnScroll() {
       this.$gsap.to(".eventsheading", {
-        x: 200,
+        x: 100,
         ease: "Power2.easeInOut",
         scrollTrigger: {
           trigger: "bottom",
           pin: true,
-          end: "bottom",
+          end: "bottom 200px",
           scrub: true,
         },
       });
