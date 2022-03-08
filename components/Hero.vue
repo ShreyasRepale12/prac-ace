@@ -47,10 +47,13 @@
             py-1
             sm:py-2
             text-lg
-            bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
+            bg-gradient-to-r
+            from-green-400
+            to-blue-500
+            hover:from-pink-500 hover:to-yellow-500
             font-semibold
           "
-          style="background-color: #4ce6a7;"
+          style="background-color: #4ce6a7"
         >
           Join Club
         </button>
@@ -62,7 +65,7 @@
             transition
             duration-150
             ease-in-out
-            hover:border-indigo-600 hover:text-indigo-600
+            hover:border-indigo-600 hover:text-gray-900 hover:bg-green-400
             rounded-full
             border border-indigo-700
             text-indigo-700
@@ -102,13 +105,26 @@
         id="content-desktop"
       />
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+      <img src="~/static/ruby2.png" class="rubydesktop" style="
+          position: absolute;
+          top: 450px;
+          left: 10px;
+        " id="content-desktop">
+
+      <img src="~/static/ruby2.png" class="rubymobile" height="75px" width="75px" style="position: absolute;
+          top: 400px;
+          left: 10px;" id="content-mobile">
+    <br><br><br><br>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CentreAlignedSimple",
+  name: "Hero",
+  mounted() {
+    this.animateOnScroll();
+  },
   methods: {
     // Function to toggle header menu in mobile view.
     toggleMenu(flag) {
@@ -119,6 +135,18 @@ export default {
         value.classList.add("hidden");
       }
     },
+    animateOnScroll() {
+      this.$gsap.to(".rubydesktop", {
+      rotation: 480,
+      x: 850,
+      duration: 5
+    });
+    this.$gsap.to(".rubymobile", {
+      rotation: 480,
+      x: 150,
+      duration: 5
+    });
+    },
   },
 };
 </script>
@@ -126,13 +154,19 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
-#content-desktop {display: block;}
-#content-mobile {display: none;}
+#content-desktop {
+  display: block;
+}
+#content-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-
-#content-desktop {display: none;}
-#content-mobile {display: block;}
-
+  #content-desktop {
+    display: none;
+  }
+  #content-mobile {
+    display: block;
+  }
 }
 </style>
