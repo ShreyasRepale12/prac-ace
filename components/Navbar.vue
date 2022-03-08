@@ -98,7 +98,7 @@
         </ul>
 
         <div class="follow">
-          <p class="italic font-sans text-sm">follow us:</p>
+          <p class="italic font-sans text-sm" style="color: #4ce6a7;">follow us on:</p>
           <div class="social flex space-x-5 mt-4 ">
             <a href="#">
               <svg 
