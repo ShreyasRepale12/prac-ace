@@ -115,7 +115,7 @@
       <img src="~/static/ruby2.png" class="rubymobile" height="75px" width="75px" style="position: absolute;
           top: 400px;
           left: 10px;" id="content-mobile">
-    <br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </template>
 
